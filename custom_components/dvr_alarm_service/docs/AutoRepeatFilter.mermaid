@@ -1,0 +1,41 @@
+flowchart TD
+
+    subgraph TimingTimer["TimingTimer"]
+        TimingTimerCancel[["Cancel TimingTimer<br/>(if running)"]]
+        TimingTimerCancel --> TimingTimerStart[["Start Timing Timer<br/>(<i>delay</i> seconds)"]]
+        TimingTimerStart --> TimingTimerTimeout{{"Timeout?"}}
+        TimingTimerTimeout -- No --> TimingTimerTimeout
+        TimingTimerTimeout -- Yes --> TimmingEmitOff["Emit OFF"]
+    end
+
+    subgraph OffTimer["OffTimer"]
+        OffTimerCancel[["Cancel OffTimer<br/>(if running)"]]
+        OffTimerCancel --> OffTimerStart["Start Off Timer<br/>(<i>delay_off</i> seconds)"]
+        OffTimerStart --> OffTimerTimeout{{"Timeout?"}}
+        OffTimerTimeout -- No --> OffTimerTimeout
+        OffTimerTimeout -- Yes --> OffTimerEmitOff["Emit OFF"]
+    end
+
+    subgraph OnTimer["OnTimer"]
+        OnTimerCancel[["Cancel OnTimer<br/>(if running)"]]
+        OnTimerCancel --> OnTimerStart["Start On Timer<br/>(<i>delay_on</i> seconds)"]
+        OnTimerStart --> OnTimerTimeout{{"Timeout?"}}
+        OnTimerTimeout -- No --> OnTimerTimeout
+        OnTimerTimeout -- Yes --> OnTimerEmitOn["Emit ON"]
+    end
+
+    Input(["Input"]) --> EvaluateNewValue{"Evaluate<br/>new_value"}
+    EvaluateNewValue -- OFF -->
+            TimingTimerCancelForOff[["Cancel TimingTimer<br/>(if running)"]] -->
+        OffTimerCancelForOff[["Cancel OffTimer<br/>(if running)"]] -->
+        OnTimerCancelForOff[["Cancel OnTimer<br/>(if running)"]] --> EmitNewValue["Emit new_value"]
+    EvaluateNewValue -- ON --> TimingTimerCancel
+    OnTimerEmitOn --> OffTimerCancel
+    OffTimerEmitOff --> OnTimerCancel
+
+    Output(["Output"])
+    TimmingEmitOff --> Output
+    EmitNewValue --> Output
+    OnTimerEmitOn --> Output
+    OffTimerEmitOff --> Output
+

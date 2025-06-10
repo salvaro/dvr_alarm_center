@@ -1,0 +1,13 @@
+flowchart TD
+    subgraph Timer["OnTimer"]
+        TimerCancel[["Cancel OnTimer<br/>(if running)"]]
+        TimerCancel --> TimerStart["Start OnTimer<br/>(<i>delay</i> seconds)"]
+        TimerStart --> TimerTimeout{{"Timeout?"}} -- No --> TimerTimeout
+        TimerTimeout -- Yes --> EmitOn["Emit ON"]
+    end
+        Input(["Input"]) --> EvaluateNewValue{"Evaluate<br>new_value"}
+        EvaluateNewValue -- ON --> TimerCancel
+        EmitOn --> Output
+        EvaluateNewValue -- OFF --> CancelTimerForOff[["Cancel OffTimer<br/>(if running)"]]
+        CancelTimerForOff --> EmitNewValue["Emit new_value"]
+        EmitNewValue --> Output
