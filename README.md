@@ -1,7 +1,8 @@
 # Home Assistant Custom Component: DVR-IP/Sofia Alarm Center Sensors  
 
+<!---
 [![hacs_badge](https://img.shields.io/badge/HACS-Default-orange.svg)](https://github.com/hacs/integration)
-
+-->
 
 **Monitor motion and occupancy using alarm messages from low-cost DVR-IP/Sofia surveillance systems.**  
 
