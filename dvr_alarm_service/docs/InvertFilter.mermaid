@@ -1,0 +1,6 @@
+flowchart TD
+    Input(["Input"]) --> EvaluateNewValue{"Evaluate<br>new_value"}
+    EvaluateNewValue -- ON --> InvertOn["new_value = OFF"]
+    EvaluateNewValue -- OFF --> InvertOff["new_value = ON"]
+    InvertOn --> Output(["Output"])
+    InvertOff --> Output(["Output"])

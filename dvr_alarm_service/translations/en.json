@@ -1,0 +1,602 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "Device is already configured"
+        },
+        "error": {
+            "cannot_connect": "Failed to connect",
+            "duplicate_device_id": "Duplicate Device Serial",
+            "duplicate_service_port": "Service port already taken",
+            "invalid_auth": "Invalid authentication",
+            "invalid_device_channel_count": "Invalid Device Channel Count",
+            "invalid_device_id": "Invalid Device Serial",
+            "unknown": "Unexpected error"
+        },
+        "step": {
+            "service": {
+                "data": {
+                    "service_buffer_size": "Buffer size",
+                    "service_port": "Listen port",
+                    "service_timeout": "Timeout (seconds)"
+                },
+                "title": "Service Server Configuration"
+            },
+            "user": {
+                "data": {
+                    "host": "Host",
+                    "password": "Password",
+                    "username": "Username"
+                },
+                "title": "Credentials"
+            }
+        }
+    },
+    "config_subentries": {
+        "device": {
+            "initiate_flow": {
+                "reconfigure": "Reconfigure device",
+                "user": "Add device"
+            },
+            "name": "Add device name",
+            "step": {
+                "device": {
+                    "abort": {
+                        "already_configured": "Device is already configured"
+                    },
+                    "data": {
+                        "area": "Area",
+                        "channel_count": "Channel Count",
+                        "channels": "Channels",
+                        "name": "Name",
+                        "serial": "Serial"
+                    },
+                    "error": {
+                        "duplicate_device_id": "Duplicate Device Serial",
+                        "invalid_device_id": "Invalid Device Serial",
+                        "unknown": "Unexpected error"
+                    },
+                    "title": "Device Configuration"
+                },
+                "device_channels": {
+                    "abort": {
+                        "already_configured": "Device is already configured"
+                    },
+                    "data": {
+                        "channel_area": "Area",
+                        "channel_device_id": "Device Serial",
+                        "channel_enabled": "Enabled",
+                        "channel_id": "Channel Number",
+                        "channel_name": "Name"
+                    },
+                    "error": {
+                        "duplicate_device_id": "Duplicate Device Serial",
+                        "invalid_device_id": "Invalid Device Serial",
+                        "unknown": "Unexpected error"
+                    },
+                    "sections": {
+                        "channel_10_options": {
+                            "data": {
+                                "channel_10_area": "Area",
+                                "channel_10_enabled": "Enable",
+                                "channel_10_name": "Name"
+                            },
+                            "name": "Channel #10"
+                        },
+                        "channel_11_options": {
+                            "data": {
+                                "channel_11_area": "Area",
+                                "channel_11_enabled": "Enable",
+                                "channel_11_name": "Name"
+                            },
+                            "name": "Channel #11"
+                        },
+                        "channel_12_options": {
+                            "data": {
+                                "channel_12_area": "Area",
+                                "channel_12_enabled": "Enable",
+                                "channel_12_name": "Name"
+                            },
+                            "name": "Channel #12"
+                        },
+                        "channel_13_options": {
+                            "data": {
+                                "channel_13_area": "Area",
+                                "channel_13_enabled": "Enable",
+                                "channel_13_name": "Name"
+                            },
+                            "name": "Channel #13"
+                        },
+                        "channel_14_options": {
+                            "data": {
+                                "channel_14_area": "Area",
+                                "channel_14_enabled": "Enable",
+                                "channel_14_name": "Name"
+                            },
+                            "name": "Channel #14"
+                        },
+                        "channel_15_options": {
+                            "data": {
+                                "channel_15_area": "Area",
+                                "channel_15_enabled": "Enable",
+                                "channel_15_name": "Name"
+                            },
+                            "name": "Channel #15"
+                        },
+                        "channel_16_options": {
+                            "data": {
+                                "channel_16_area": "Area",
+                                "channel_16_enabled": "Enable",
+                                "channel_16_name": "Name"
+                            },
+                            "name": "Channel #16"
+                        },
+                        "channel_17_options": {
+                            "data": {
+                                "channel_17_area": "Area",
+                                "channel_17_enabled": "Enable",
+                                "channel_17_name": "Name"
+                            },
+                            "name": "Channel #17"
+                        },
+                        "channel_18_options": {
+                            "data": {
+                                "channel_18_area": "Area",
+                                "channel_18_enabled": "Enable",
+                                "channel_18_name": "Name"
+                            },
+                            "name": "Channel #18"
+                        },
+                        "channel_19_options": {
+                            "data": {
+                                "channel_19_area": "Area",
+                                "channel_19_enabled": "Enable",
+                                "channel_19_name": "Name"
+                            },
+                            "name": "Channel #19"
+                        },
+                        "channel_1_options": {
+                            "data": {
+                                "channel_1_area": "Area",
+                                "channel_1_enabled": "Enable",
+                                "channel_1_name": "Name"
+                            },
+                            "name": "Channel #1"
+                        },
+                        "channel_20_options": {
+                            "data": {
+                                "channel_20_area": "Area",
+                                "channel_20_enabled": "Enable",
+                                "channel_20_name": "Name"
+                            },
+                            "name": "Channel #20"
+                        },
+                        "channel_21_options": {
+                            "data": {
+                                "channel_21_area": "Area",
+                                "channel_21_enabled": "Enable",
+                                "channel_21_name": "Name"
+                            },
+                            "name": "Channel #21"
+                        },
+                        "channel_22_options": {
+                            "data": {
+                                "channel_22_area": "Area",
+                                "channel_22_enabled": "Enable",
+                                "channel_22_name": "Name"
+                            },
+                            "name": "Channel #22"
+                        },
+                        "channel_23_options": {
+                            "data": {
+                                "channel_23_area": "Area",
+                                "channel_23_enabled": "Enable",
+                                "channel_23_name": "Name"
+                            },
+                            "name": "Channel #23"
+                        },
+                        "channel_24_options": {
+                            "data": {
+                                "channel_24_area": "Area",
+                                "channel_24_enabled": "Enable",
+                                "channel_24_name": "Name"
+                            },
+                            "name": "Channel #24"
+                        },
+                        "channel_25_options": {
+                            "data": {
+                                "channel_25_area": "Area",
+                                "channel_25_enabled": "Enable",
+                                "channel_25_name": "Name"
+                            },
+                            "name": "Channel #25"
+                        },
+                        "channel_26_options": {
+                            "data": {
+                                "channel_26_area": "Area",
+                                "channel_26_enabled": "Enable",
+                                "channel_26_name": "Name"
+                            },
+                            "name": "Channel #26"
+                        },
+                        "channel_27_options": {
+                            "data": {
+                                "channel_27_area": "Area",
+                                "channel_27_enabled": "Enable",
+                                "channel_27_name": "Name"
+                            },
+                            "name": "Channel #27"
+                        },
+                        "channel_28_options": {
+                            "data": {
+                                "channel_28_area": "Area",
+                                "channel_28_enabled": "Enable",
+                                "channel_28_name": "Name"
+                            },
+                            "name": "Channel #28"
+                        },
+                        "channel_29_options": {
+                            "data": {
+                                "channel_29_area": "Area",
+                                "channel_29_enabled": "Enable",
+                                "channel_29_name": "Name"
+                            },
+                            "name": "Channel #29"
+                        },
+                        "channel_2_options": {
+                            "data": {
+                                "channel_2_area": "Area",
+                                "channel_2_enabled": "Enable",
+                                "channel_2_name": "Name"
+                            },
+                            "name": "Channel #2"
+                        },
+                        "channel_30_options": {
+                            "data": {
+                                "channel_30_area": "Area",
+                                "channel_30_enabled": "Enable",
+                                "channel_30_name": "Name"
+                            },
+                            "name": "Channel #30"
+                        },
+                        "channel_31_options": {
+                            "data": {
+                                "channel_31_area": "Area",
+                                "channel_31_enabled": "Enable",
+                                "channel_31_name": "Name"
+                            },
+                            "name": "Channel #31"
+                        },
+                        "channel_32_options": {
+                            "data": {
+                                "channel_32_area": "Area",
+                                "channel_32_enabled": "Enable",
+                                "channel_32_name": "Name"
+                            },
+                            "name": "Channel #32"
+                        },
+                        "channel_33_options": {
+                            "data": {
+                                "channel_33_area": "Area",
+                                "channel_33_enabled": "Enable",
+                                "channel_33_name": "Name"
+                            },
+                            "name": "Channel #33"
+                        },
+                        "channel_34_options": {
+                            "data": {
+                                "channel_34_area": "Area",
+                                "channel_34_enabled": "Enable",
+                                "channel_34_name": "Name"
+                            },
+                            "name": "Channel #34"
+                        },
+                        "channel_35_options": {
+                            "data": {
+                                "channel_35_area": "Area",
+                                "channel_35_enabled": "Enable",
+                                "channel_35_name": "Name"
+                            },
+                            "name": "Channel #35"
+                        },
+                        "channel_36_options": {
+                            "data": {
+                                "channel_36_area": "Area",
+                                "channel_36_enabled": "Enable",
+                                "channel_36_name": "Name"
+                            },
+                            "name": "Channel #36"
+                        },
+                        "channel_37_options": {
+                            "data": {
+                                "channel_37_area": "Area",
+                                "channel_37_enabled": "Enable",
+                                "channel_37_name": "Name"
+                            },
+                            "name": "Channel #37"
+                        },
+                        "channel_38_options": {
+                            "data": {
+                                "channel_38_area": "Area",
+                                "channel_38_enabled": "Enable",
+                                "channel_38_name": "Name"
+                            },
+                            "name": "Channel #38"
+                        },
+                        "channel_39_options": {
+                            "data": {
+                                "channel_39_area": "Area",
+                                "channel_39_enabled": "Enable",
+                                "channel_39_name": "Name"
+                            },
+                            "name": "Channel #39"
+                        },
+                        "channel_3_options": {
+                            "data": {
+                                "channel_3_area": "Area",
+                                "channel_3_enabled": "Enable",
+                                "channel_3_name": "Name"
+                            },
+                            "name": "Channel #3"
+                        },
+                        "channel_40_options": {
+                            "data": {
+                                "channel_40_area": "Area",
+                                "channel_40_enabled": "Enable",
+                                "channel_40_name": "Name"
+                            },
+                            "name": "Channel #40"
+                        },
+                        "channel_41_options": {
+                            "data": {
+                                "channel_41_area": "Area",
+                                "channel_41_enabled": "Enable",
+                                "channel_41_name": "Name"
+                            },
+                            "name": "Channel #41"
+                        },
+                        "channel_42_options": {
+                            "data": {
+                                "channel_42_area": "Area",
+                                "channel_42_enabled": "Enable",
+                                "channel_42_name": "Name"
+                            },
+                            "name": "Channel #42"
+                        },
+                        "channel_43_options": {
+                            "data": {
+                                "channel_43_area": "Area",
+                                "channel_43_enabled": "Enable",
+                                "channel_43_name": "Name"
+                            },
+                            "name": "Channel #43"
+                        },
+                        "channel_44_options": {
+                            "data": {
+                                "channel_44_area": "Area",
+                                "channel_44_enabled": "Enable",
+                                "channel_44_name": "Name"
+                            },
+                            "name": "Channel #44"
+                        },
+                        "channel_45_options": {
+                            "data": {
+                                "channel_45_area": "Area",
+                                "channel_45_enabled": "Enable",
+                                "channel_45_name": "Name"
+                            },
+                            "name": "Channel #45"
+                        },
+                        "channel_46_options": {
+                            "data": {
+                                "channel_46_area": "Area",
+                                "channel_46_enabled": "Enable",
+                                "channel_46_name": "Name"
+                            },
+                            "name": "Channel #46"
+                        },
+                        "channel_47_options": {
+                            "data": {
+                                "channel_47_area": "Area",
+                                "channel_47_enabled": "Enable",
+                                "channel_47_name": "Name"
+                            },
+                            "name": "Channel #47"
+                        },
+                        "channel_48_options": {
+                            "data": {
+                                "channel_48_area": "Area",
+                                "channel_48_enabled": "Enable",
+                                "channel_48_name": "Name"
+                            },
+                            "name": "Channel #48"
+                        },
+                        "channel_49_options": {
+                            "data": {
+                                "channel_49_area": "Area",
+                                "channel_49_enabled": "Enable",
+                                "channel_49_name": "Name"
+                            },
+                            "name": "Channel #49"
+                        },
+                        "channel_4_options": {
+                            "data": {
+                                "channel_4_area": "Area",
+                                "channel_4_enabled": "Enable",
+                                "channel_4_name": "Name"
+                            },
+                            "name": "Channel #4"
+                        },
+                        "channel_50_options": {
+                            "data": {
+                                "channel_50_area": "Area",
+                                "channel_50_enabled": "Enable",
+                                "channel_50_name": "Name"
+                            },
+                            "name": "Channel #50"
+                        },
+                        "channel_51_options": {
+                            "data": {
+                                "channel_51_area": "Area",
+                                "channel_51_enabled": "Enable",
+                                "channel_51_name": "Name"
+                            },
+                            "name": "Channel #51"
+                        },
+                        "channel_52_options": {
+                            "data": {
+                                "channel_52_area": "Area",
+                                "channel_52_enabled": "Enable",
+                                "channel_52_name": "Name"
+                            },
+                            "name": "Channel #52"
+                        },
+                        "channel_53_options": {
+                            "data": {
+                                "channel_53_area": "Area",
+                                "channel_53_enabled": "Enable",
+                                "channel_53_name": "Name"
+                            },
+                            "name": "Channel #53"
+                        },
+                        "channel_54_options": {
+                            "data": {
+                                "channel_54_area": "Area",
+                                "channel_54_enabled": "Enable",
+                                "channel_54_name": "Name"
+                            },
+                            "name": "Channel #54"
+                        },
+                        "channel_55_options": {
+                            "data": {
+                                "channel_55_area": "Area",
+                                "channel_55_enabled": "Enable",
+                                "channel_55_name": "Name"
+                            },
+                            "name": "Channel #55"
+                        },
+                        "channel_56_options": {
+                            "data": {
+                                "channel_56_area": "Area",
+                                "channel_56_enabled": "Enable",
+                                "channel_56_name": "Name"
+                            },
+                            "name": "Channel #56"
+                        },
+                        "channel_57_options": {
+                            "data": {
+                                "channel_57_area": "Area",
+                                "channel_57_enabled": "Enable",
+                                "channel_57_name": "Name"
+                            },
+                            "name": "Channel #57"
+                        },
+                        "channel_58_options": {
+                            "data": {
+                                "channel_58_area": "Area",
+                                "channel_58_enabled": "Enable",
+                                "channel_58_name": "Name"
+                            },
+                            "name": "Channel #58"
+                        },
+                        "channel_59_options": {
+                            "data": {
+                                "channel_59_area": "Area",
+                                "channel_59_enabled": "Enable",
+                                "channel_59_name": "Name"
+                            },
+                            "name": "Channel #59"
+                        },
+                        "channel_5_options": {
+                            "data": {
+                                "channel_5_area": "Area",
+                                "channel_5_enabled": "Enable",
+                                "channel_5_name": "Name"
+                            },
+                            "name": "Channel #5"
+                        },
+                        "channel_60_options": {
+                            "data": {
+                                "channel_60_area": "Area",
+                                "channel_60_enabled": "Enable",
+                                "channel_60_name": "Name"
+                            },
+                            "name": "Channel #60"
+                        },
+                        "channel_61_options": {
+                            "data": {
+                                "channel_61_area": "Area",
+                                "channel_61_enabled": "Enable",
+                                "channel_61_name": "Name"
+                            },
+                            "name": "Channel #61"
+                        },
+                        "channel_62_options": {
+                            "data": {
+                                "channel_62_area": "Area",
+                                "channel_62_enabled": "Enable",
+                                "channel_62_name": "Name"
+                            },
+                            "name": "Channel #62"
+                        },
+                        "channel_63_options": {
+                            "data": {
+                                "channel_63_area": "Area",
+                                "channel_63_enabled": "Enable",
+                                "channel_63_name": "Name"
+                            },
+                            "name": "Channel #63"
+                        },
+                        "channel_64_options": {
+                            "data": {
+                                "channel_64_area": "Area",
+                                "channel_64_enabled": "Enable",
+                                "channel_64_name": "Name"
+                            },
+                            "name": "Channel #64"
+                        },
+                        "channel_6_options": {
+                            "data": {
+                                "channel_6_area": "Area",
+                                "channel_6_enabled": "Enable",
+                                "channel_6_name": "Name"
+                            },
+                            "name": "Channel #6"
+                        },
+                        "channel_7_options": {
+                            "data": {
+                                "channel_7_area": "Area",
+                                "channel_7_enabled": "Enable",
+                                "channel_7_name": "Name"
+                            },
+                            "name": "Channel #7"
+                        },
+                        "channel_8_options": {
+                            "data": {
+                                "channel_8_area": "Area",
+                                "channel_8_enabled": "Enable",
+                                "channel_8_name": "Name"
+                            },
+                            "name": "Channel #8"
+                        },
+                        "channel_9_options": {
+                            "data": {
+                                "channel_9_area": "Area",
+                                "channel_9_enabled": "Enable",
+                                "channel_9_name": "Name"
+                            },
+                            "name": "Channel #9"
+                        }
+                    },
+                    "title": "Device Channels Configuration"
+                },
+                "user": {
+                    "description": "Configure alarm service device",
+                    "name": "Add device step name",
+                    "title": "Add device step title"
+                }
+            },
+            "title": "Device configuration"
+        }
+    },
+    "title": "DVR Alarm Server"
+}
