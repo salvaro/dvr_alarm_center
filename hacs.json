@@ -1,0 +1,5 @@
+{
+    "name": "DVR Alarm Server",
+    "homeassistant": "2025.5.3",
+    "render_readme": true
+}
