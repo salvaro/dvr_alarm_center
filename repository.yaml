@@ -1,0 +1,4 @@
+# https://developers.home-assistant.io/docs/add-ons/repository#repository-configuration
+name: DVR Alarm Service
+url: "https://github.com/salvaro/dvr_alarm_center"
+maintainer: Pedro Salvaro <psalvaro@gmail.com>
